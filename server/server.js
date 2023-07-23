@@ -8,9 +8,14 @@ dotenv.config();
 
 const app = express();
 
-app.use(cors({
-    origin: '*'
-}));
+app.use(
+  cors({
+    origin: "*",
+    methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
+    preflightContinue: false,
+    optionsSuccessStatus: 204,
+  })
+);
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use('/', router);
