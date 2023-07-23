@@ -15,7 +15,8 @@ export const uploadImage = async (request, response) => {
     response
       .status(200)
       .json({
-        path: `https://file-sharing-3ky9.onrender.com/file/${file._id}`,
+        path: `https://filesharing-backend-z1r4.onrender.com/file/${file._id}`,
+        
       });
   } catch (error) {
     console.error(error.message);
