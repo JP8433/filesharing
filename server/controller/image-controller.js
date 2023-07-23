@@ -15,7 +15,7 @@ export const uploadImage = async (request, response) => {
     response
       .status(200)
       .json({
-        path: `https://filesharing-backend-z1r4.onrender.com/file/${file._id}`,
+        path: `https://filesystem2bug-fix.onrender.com/file/${file._id}`,
         
       });
   } catch (error) {
